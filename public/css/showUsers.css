@@ -1,0 +1,12 @@
+.tableUsers{
+  width: 100%;
+  background-color: #FFC952;
+  border-style: dotted;
+  border-color: gray;
+}
+.editButton{
+  text-decoration: none;
+}
+.pagination li{
+  display: inline;
+}

@@ -1,0 +1,20 @@
+.divRightC{
+  background-color: rgb(255, 255, 244);
+  height: 100%;
+  float: left;
+  width: 80%;
+}
+.content{
+  height: 400px;
+  display: inline-block;
+  margin-top: 100px;
+  width: 70%;
+}
+.input{
+  background-color: rgb(255, 201, 82);
+  display: block;
+  width: 100%;
+}
+.alert-danger{
+  color: red;
+}

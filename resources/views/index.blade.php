@@ -1,0 +1,70 @@
+@extends('layouts.main')
+
+@section('content')
+    <div class="ContainerleftMenu">
+      <br>
+      <div class="leftMenu">
+        CATEGORIAS
+        <ul>
+          <li><a href="#">Accion</a></li>
+          <br>
+          <li><a href="#">Belico</a></li>
+          <br>
+          <li><a href="#">Drama</a></li>
+          <br>
+          <li><a href="#">Terror</a></li>
+          <br>
+          <li><a href="#">Infantil</a></li>
+          <br>
+          <li><a href="#">Cine negro</a></li>
+          <br>
+          <li><a href="#">Supervivencia</a></li>
+          <br>
+          <li><a href="#">Zombies</a></li>
+          <br>
+          <li><a href="#">Comedia</a></li>
+          <br>
+          <li><a href="#">Cine negro</a></li>
+          <br>
+          <li><a href="#">Antiguas</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="containerInfo">
+      <div class="info">
+        Movies y mas! xD
+        Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.
+      </div>
+      <div class="info">
+        Movies y mas! xD
+        Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.
+      </div>
+      <div class="info">
+        Movies y mas! xD
+        Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.
+      </div>
+      <div class="info">
+        Movies y mas! xD
+        Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.
+      </div>
+    </div>
+    <div class="containerAdvert">
+      <div class="advert">
+        <img src="../public/images/caratulas.jpg" alt="img"/>
+        <img src="../public/images/caratulaMalefica.jpg" alt="img"/>
+        <img src="../public/images/caratulas.jpg" alt="img"/>
+        <img src="../public/images/caratulas.jpg" alt="img"/>
+        <img src="../public/images/caratulaMalefica.jpg" alt="img"/>
+        <img src="../public/images/caratulas.jpg" alt="img"/>
+      </div>
+      <br>
+      <div class="advert">
+        <img src="../public/images/caratulas.jpg" alt="img"/>
+        <img src="../public/images/caratulaMalefica.jpg" alt="img"/>
+        <img src="../public/images/caratulas.jpg" alt="img"/>
+        <img src="../public/images/caratulas.jpg" alt="img"/>
+        <img src="../public/images/caratulaMalefica.jpg" alt="img"/>
+        <img src="../public/images/caratulas.jpg" alt="img"/>
+      </div>
+    </div>
+@stop
