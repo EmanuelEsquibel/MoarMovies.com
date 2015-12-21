@@ -30,6 +30,7 @@ Route::get( 'logout', 'LogController@logout' );
 
 Route::resource( 'log', 'LogController' );
 Route::resource( 'user', 'UsuarioController' );
+Route::resource( 'genders', 'GenderController' );
 // Route::get('ruta','TestController@start');
 // Route::get('names/{name}','TestController@fname');
 // Con esta declaracion genero multiples rutas

@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <script src="jquery-1.11.3.js" charset="utf-8"></script>
     <title>Administration</title>
     {!! Html::style( '../public/css/administration.css' ) !!}
     {!! Html::style( '../public/css/formUser.css' ) !!}
@@ -33,7 +34,7 @@
             <br>
             <li>
               <li class="titleList">Genres</li>
-              <li class="href"><a href="create">Create</a></li>
+              <li class="href"><a href="{!! URL::to('genders/create')!!}">Create</a></li>
               <li class="href"><a href="create">Read</a></li>
               <li class="href"><a href="create">Update</a></li>
               <li class="href"><a href="create">Delete</a></li>
@@ -58,6 +59,6 @@
       </div>
 
     </div>
-
+  <script src="js/" charset="utf-8"></script>
   </body>
 </html>
