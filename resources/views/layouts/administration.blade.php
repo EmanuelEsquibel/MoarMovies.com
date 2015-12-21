@@ -6,6 +6,7 @@
     {!! Html::style( '../public/css/administration.css' ) !!}
     {!! Html::style( '../public/css/formUser.css' ) !!}
     {!! Html::style( '../public/css/showUsers.css' ) !!}
+    {!! Html::style( '../public/css/formGenders.css' ) !!}
   </head>
   <body>
 

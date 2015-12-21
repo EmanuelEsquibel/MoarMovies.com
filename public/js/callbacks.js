@@ -16,7 +16,12 @@
         headers: {'X-CSRF-TOKEN': token },
         dataType: 'json',
         data: { genre: textValue },
-        success: function( data ) { console.log( data.msg ) },
+        //Operacion Exitosa.
+        success: function( data ) {
+          console.log( data.msg );
+          $('.AjaxSuccess').fadeIn();
+        },
+        //Errores.
         error: function (jqXHR,error, errorThrown) {
           console.log(jqXHR.status);
           console.log(jqXHR.responseText);

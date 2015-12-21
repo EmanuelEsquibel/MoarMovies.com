@@ -1,5 +1,8 @@
 @extends('layouts.administration')
 @section('content')
+  <div class="AjaxSuccess">
+    Succesfully
+  </div>
   {!! Form::open() !!}
     <input type="hidden" id="token" name="token" value="{{ csrf_token() }}">
     {!! Form::label('textValue', 'Name') !!}
