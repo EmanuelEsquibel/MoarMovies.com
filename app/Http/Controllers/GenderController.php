@@ -37,9 +37,12 @@ class GenderController extends Controller
      */
     public function store(Request $request)
     {
-        $genres = new Genre;
-        $genres -> genre = $request -> genre;
-        $genres -> save();
+      if( $request -> Ajax() ){
+        return response() -> json([ "msg" => $request -> All() ]);
+      }
+        // $genres = new Genre;
+        // $genres -> genre = $request -> genre;
+        // $genres -> save();
     }
 
     /**

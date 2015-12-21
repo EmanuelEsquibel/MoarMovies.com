@@ -2,7 +2,6 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <script src="jquery-1.11.3.js" charset="utf-8"></script>
     <title>Administration</title>
     {!! Html::style( '../public/css/administration.css' ) !!}
     {!! Html::style( '../public/css/formUser.css' ) !!}
@@ -57,8 +56,8 @@
           @include('alerts.withoutPrivileges')
         </div>
       </div>
-
     </div>
-  <script src="js/" charset="utf-8"></script>
+    {!! Html::script('js/jquery-1.11.3.js') !!}
+    {!! Html::script('js/callbacks.js') !!}
   </body>
 </html>
