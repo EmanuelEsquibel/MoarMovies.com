@@ -111,6 +111,7 @@ a:hover{
 }
 /* Contenedor de menu a la izquierda */
 .ContainerleftMenu{
+  margin-top: 20px;
   float: left;
   width: 20%;
   height: 100%;
@@ -148,16 +149,15 @@ a:hover{
 }
 /* Contenido publicitario del contenedor derecho */
 .advert{
-  height: 100%;
   margin: 0 auto;
-  width: 95%;
-  border-style: solid;
+  margin-top: 20px;
+  width: 100%;
+  border-style: dotted;
   border-width: 1px;
   padding-top: 5px;
-  border-radius: 10px;
 }
 .advert img{
-  width: 40%;
+  width: 45%;
 }
 /* Seccion para sugerir peliculas */
 .sectionMovies{
