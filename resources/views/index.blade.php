@@ -6,27 +6,10 @@
       <div class="leftMenu">
         CATEGORIAS
         <ul>
-          <li><a href="#">Accion</a></li>
-          <br>
-          <li><a href="#">Belico</a></li>
-          <br>
-          <li><a href="#">Drama</a></li>
-          <br>
-          <li><a href="#">Terror</a></li>
-          <br>
-          <li><a href="#">Infantil</a></li>
-          <br>
-          <li><a href="#">Cine negro</a></li>
-          <br>
-          <li><a href="#">Supervivencia</a></li>
-          <br>
-          <li><a href="#">Zombies</a></li>
-          <br>
-          <li><a href="#">Comedia</a></li>
-          <br>
-          <li><a href="#">Cine negro</a></li>
-          <br>
-          <li><a href="#">Antiguas</a></li>
+          @foreach( $genres as $genre)
+            <li><a href="#"> {{ $genre -> genre}} </a></li>
+            <br>
+          @endforeach
         </ul>
       </div>
     </div>

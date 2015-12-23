@@ -21,6 +21,7 @@ Route::get('nombre/{nombre?}', function ($nombre = "Emanuel") {
 });
 */
 //Views Controllers
+Route::get( '/', 'FrontController@index' );
 Route::get( 'index', 'FrontController@index' );
 Route::get( 'contact', 'FrontController@contact' );
 Route::get( 'reviews', 'FrontController@review' );
