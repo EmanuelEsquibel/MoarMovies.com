@@ -4,7 +4,7 @@
     <div class="ContainerleftMenu">
       <br>
       <div class="leftMenu">
-        CATEGORIAS
+        <div class="catTitle">Categorias</div>
         <ul>
           @foreach( $genres as $genre)
             <li><a href="#"> {{ $genre -> genre}} </a></li>
