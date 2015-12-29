@@ -10,3 +10,7 @@
     {!! link_to( '#', $title = 'Add', $attributes = [ 'id' => 'buttonAdd', 'class' => 'add'], $secure = null) !!}
   {!! Form::close() !!}
 @endsection
+
+@section('script')
+  {!! Html::script('js/callbacks.js') !!}
+@endsection

@@ -3,7 +3,7 @@
   <?php print Session::get('status'); ?>
 </div>
 @section('content')
-  <table class="tableUsers">
+  <table class="orangeTable">
     <thead>
         <tr>
           <th>Name</th>
@@ -17,7 +17,7 @@
             <td> {{ $user -> name }} </td>
             <td> {{ $user -> email }} </td>
             <td>
-              {!! link_to_route( 'user.edit', $title = "Edit", $parameters = $user -> id, $attributes = null ) !!}
+              {!! link_to_route( 'user.edit', $title = "Edit", $parameters = [$user -> id], $attributes = null ) !!}
             </td>
           </tr>
       @endforeach

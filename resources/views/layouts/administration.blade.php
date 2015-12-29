@@ -7,6 +7,7 @@
     {!! Html::style( '../public/css/formUser.css' ) !!}
     {!! Html::style( '../public/css/showUsers.css' ) !!}
     {!! Html::style( '../public/css/formGenders.css' ) !!}
+    {!! Html::style( '../public/css/showGenders.css' ) !!}
   </head>
   <body>
 
@@ -27,15 +28,15 @@
             @if( Auth::user() -> id == 1 )
               <li>
                 <li class="titleList">Users</li>
-                <li class="href"><a href="{!! URL::to('user/create')!!}">Create</a></li>
-                <li class="href"><a href="{!! URL::to('user')!!}">All users</a></li>
+                <li class="href"><a href="{!! URL::to('user/create') !!}">Create</a></li>
+                <li class="href"><a href="{!! URL::to('user') !!}">All users</a></li>
               </li>
             @endif
             <br>
             <li>
               <li class="titleList">Genres</li>
-              <li class="href"><a href="{!! URL::to('genders/create')!!}">Create</a></li>
-              <li class="href"><a href="create">Read</a></li>
+              <li class="href"><a href="{!! URL::to('genders/create') !!}">Create</a></li>
+              <li class="href"><a href="{!! URL::to('genders') !!}">Read</a></li>
               <li class="href"><a href="create">Update</a></li>
               <li class="href"><a href="create">Delete</a></li>
             </li>
@@ -59,6 +60,7 @@
       </div>
     </div>
     {!! Html::script('js/jquery-1.11.3.js') !!}
-    {!! Html::script('js/callbacks.js') !!}
+    @section('script')
+    @show
   </body>
 </html>

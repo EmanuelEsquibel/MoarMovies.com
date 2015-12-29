@@ -21,7 +21,7 @@ class FrontController extends Controller
      */
     public function index()
     {
-      $genres = \LaravelProject\Genre::All();
+      $genres = \LaravelProject\Genre::All()->sortBy('genre');
       return view('index', compact('genres') );
     }
     public function login()

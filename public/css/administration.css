@@ -1,3 +1,6 @@
+body{
+  background-color: red;
+}
 .main{
   width: 100%;
   display: inline-block;

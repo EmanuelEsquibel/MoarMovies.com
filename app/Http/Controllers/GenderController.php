@@ -16,7 +16,8 @@ class GenderController extends Controller
      */
     public function index()
     {
-      //
+      $genders = \LaravelProject\Genre::All() -> sortBy('genre');
+      return view( 'genders.index', compact( 'genders' ) );
     }
 
     /**
@@ -85,8 +86,9 @@ class GenderController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy( $id )
     {
-        //
+      $user = \LaravelProject\Genre::Find( $id );
+      $user -> delete();
     }
 }
