@@ -9,6 +9,13 @@ use LaravelProject\Http\Controllers\Controller;
 use LaravelProject\Genre;
 class GenderController extends Controller
 {
+    //Listing genres for ajax
+    public function listing(){
+      $genres = \LaravelProject\Genre::All();
+      return response() -> json(
+        $genres -> toArray()
+      );
+    }
     /**
      * Display a listing of the resource.
      *
@@ -16,8 +23,7 @@ class GenderController extends Controller
      */
     public function index()
     {
-      $genders = \LaravelProject\Genre::All() -> sortBy('genre');
-      return view( 'genders.index', compact( 'genders' ) );
+      return view( 'genders.index');
     }
 
     /**

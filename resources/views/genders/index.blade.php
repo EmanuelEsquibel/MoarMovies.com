@@ -5,19 +5,7 @@
       <th>Genders</th>
       <th>Operator</th>
     </thead>
-    <tbody>
-      <?php $count = 0; ?>
-      @foreach( $genders as $gender )
-        <?php $count += 1; ?>
-        <tr>
-          <td>
-            {{ $gender -> genre }}
-          </td>
-          <td>
-            <input type="button" name="{{ $gender -> id }}" value="Delete" class="deleteButton">
-          </td>
-        </tr>
-      @endforeach
+    <tbody id="dataTable">
     </tbody>
   </table>
   <audio id="pleaseSelect">

@@ -29,6 +29,7 @@ Route::get( 'login', 'FrontController@login' );
 Route::get( 'admin', 'FrontController@admin' );
 Route::get( 'logout', 'LogController@logout' );
 
+Route::get( 'listGenres', 'GenderController@listing' );
 Route::resource( 'log', 'LogController' );
 Route::resource( 'user', 'UsuarioController' );
 Route::resource( 'genders', 'GenderController' );
