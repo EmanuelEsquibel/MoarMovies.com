@@ -3,8 +3,9 @@
 namespace LaravelProject\Http\Controllers;
 
 use Illuminate\Http\Request;
-
 use LaravelProject\Http\Requests;
+use LaravelProject\Http\Requests\GenderCreateRequest;
+
 use LaravelProject\Http\Controllers\Controller;
 use LaravelProject\Genre;
 class GenderController extends Controller
@@ -42,7 +43,7 @@ class GenderController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(GenderCreateRequest $request)
     {
       if( $request -> Ajax() ){
         $genres = new Genre;
@@ -69,9 +70,9 @@ class GenderController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(Request $request, $id)
     {
-        //
+      //
     }
 
     /**
@@ -83,7 +84,9 @@ class GenderController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $genre = \LaravelProject\Genre::Find( $id );
+        $genre -> fill( $request -> all() );
+        $genre -> save();
     }
 
     /**

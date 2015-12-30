@@ -2,3 +2,9 @@
   display: none;
   color: green;
 }
+.textValue{
+  background-color: orange;
+}
+.add{
+  text-decoration: none;
+}

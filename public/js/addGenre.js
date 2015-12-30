@@ -18,14 +18,15 @@
         data: { genre: textValue },
         //Operacion Exitosa.
         success: function( data ) {
-          console.log( data.msg );
           $('.AjaxSuccess').fadeIn();
         },
         //Errores.
-        error: function (jqXHR,error, errorThrown) {
+        error: function (jqXHR, error, errorThrown) {
           console.log(jqXHR.status);
           console.log(jqXHR.responseText);
           console.log(errorThrown);
+          $(".errors").empty();
+          $(".errors").append( "<li>" + jqXHR.responseJSON.genre + "</li>" );
         }
       })
     }
