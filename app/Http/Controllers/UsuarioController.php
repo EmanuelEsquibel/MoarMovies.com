@@ -21,9 +21,12 @@ class UsuarioController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
-        $users = \LaravelProject\User::paginate(5);
+        $users = \LaravelProject\User::paginate(2);
+        if( $request -> ajax() ){
+          return response()->json( view('users.showUsersAjax', compact('users') ) -> render() );
+        }
         return view('users.show', compact('users') );
     }
 

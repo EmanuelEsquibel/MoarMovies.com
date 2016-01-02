@@ -9,4 +9,8 @@
 }
 .pagination li{
   display: inline;
+  text-decoration: none;
+}
+.pagination a{
+  text-decoration: none;
 }

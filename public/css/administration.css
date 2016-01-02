@@ -12,9 +12,12 @@ body{
 
 .divLeftC{
   height: 100%;
-  width: 20%;
+  width: 15%;
   float: left;
   background-color: rgb(222, 222, 222);
+  border-style: solid;
+  border-width: 0px;
+  border-right-width: 1px;
 }
 .menu{
   width: 100%;
@@ -59,8 +62,11 @@ body{
 }
 .userInfo{
   width: 100%;
-  background-color: pink;
+  background-color: rgb(222, 222, 222);
   text-align: left;
-  font-size: 10px;
+  font-size: 15px;
   color: green;
+}
+.userInfo a{
+  color: red;
 }
