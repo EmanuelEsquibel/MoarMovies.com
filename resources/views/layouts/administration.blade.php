@@ -10,6 +10,8 @@
     {!! Html::style( '../public/css/showGenders.css' ) !!}
   </head>
   <body>
+  Modificar el length de las columnas tipo string
+  Agregar request tambien
 
     <div class="main">
 
@@ -35,7 +37,7 @@
             <br>
             <li>
               <li class="titleList">Movies</li>
-              <li class="href"><a href="create">Create</a></li>
+              <li class="href"><a href="{!! URL::to('movies/create') !!}">Create</a></li>
               <li class="href"><a href="create">Read</a></li>
             </li>
           </ul>

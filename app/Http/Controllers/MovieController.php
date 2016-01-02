@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 
 use LaravelProject\Http\Requests;
 use LaravelProject\Http\Controllers\Controller;
-
+use Genre;
 class MovieController extends Controller
 {
     /**
@@ -26,7 +26,8 @@ class MovieController extends Controller
      */
     public function create()
     {
-        return "Aqui creo un nuevo recurso dentro de movies";
+        $genres = \LaravelProject\Genre::Lists('genre', 'id');
+        return view('movies.create', compact('genres') );
     }
 
     /**
@@ -37,7 +38,17 @@ class MovieController extends Controller
      */
     public function store(Request $request)
     {
-        return "Aqui almaceno un recurso creado en el storage";
+      print $request;
+        \LaravelProject\Movie::create([
+          'id' => $request[ 'id' ],
+          'name' => $request[ 'name' ],
+          'cast' => $request[ 'cast' ],
+          'direction' => $request[ 'direction' ],
+          'duration' => $request[ 'duration' ],
+          'genre_id' => $request[ 'genre_id' ],
+          'photo' => $request[ 'photo' ]
+        ]);
+        return redirect('movies/create');
     }
 
     /**
@@ -71,7 +82,7 @@ class MovieController extends Controller
      */
     public function update(Request $request, $id)
     {
-        
+
     }
 
     /**

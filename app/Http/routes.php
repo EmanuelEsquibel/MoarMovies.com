@@ -33,6 +33,7 @@ Route::get( 'listGenres', 'GenderController@listing' );
 Route::resource( 'log', 'LogController' );
 Route::resource( 'user', 'UsuarioController' );
 Route::resource( 'genders', 'GenderController' );
+Route::resource( 'movies', 'MovieController' );
 // Route::get('ruta','TestController@start');
 // Route::get('names/{name}','TestController@fname');
 // Con esta declaracion genero multiples rutas
